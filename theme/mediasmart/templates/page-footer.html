@@ -1,0 +1,48 @@
+<article data-role='sitemap'>
+  <div class='wrapper'>
+    <nav>
+      <h3>Get in touch</h3>
+      <span>+34 91 591 53 79</span>
+      <span>+44 7834 284 611</span>
+      <a href='mailto:info@mediasmart.io'>info@mediasmart.io</a>
+    </nav>
+    <nav>
+      <h3>Product</h3>
+      <a href='/product#wide-range-of-advertising-formats'>Wide Range of Advertising Formats</a>
+      <a href='/product#advanced-targeting-options'>Advanced Targeting Options</a>
+      <a href='/product#smart-campaign-management'>Smart Campaign Management</a>
+      <a href='/partners'>Partners</a>
+    </nav>
+    <nav>
+      <h3>About us</h3>
+      <a href='/about-us#team'>The Team</a>
+      <a href='/about-us#careers'>Jobs <span class='tag primary'><label>we're hiring</label></span></a>
+      <a href='/contact'>Contact</a>
+      <a href='/blog'>Blog</a>
+      <a href='/assets/downloads/mediasmart-press-pack.zip'>Press pack</a>
+    </nav>
+    <nav>
+      <h3>Latest on the blog</h3>
+      {% for post in site.posts limit:5 %}
+        <a href='{{ post.url | prepend: site.baseurl }}'>
+          {{ post.title }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</article>
+
+<footer>
+  <span>©2016 Mediasmart</span>
+  <nav>
+    <a href='/terms-of-use'>Terms of use</a>
+    <a href='/privacy-policy'>Privacy policy</a>
+    <a href='/cookie-policy'>Cookie policy</a>
+  </nav>
+  <nav data-role='networks'>
+    <a href='https://twitter.com/mediasmart_mb' target='_blank' class='icon twitter'></a>
+    <a href='https://www.facebook.com/pages/Mediasmart-Mobile/504657222949687' target='_blank' class='icon facebook'></a>
+    <a href='https://www.youtube.com/channel/UCMkb1sSXEaxpzJ4fqmJMHQg' target='_blank' class='icon youtube'></a>
+    <a href='https://angel.co/mediasmart-mobile' target='_blank' class='icon angellist'></a>
+  </nav>
+</footer>
