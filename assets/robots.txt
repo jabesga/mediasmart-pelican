@@ -1,3 +1,0 @@
-# robots.txt for https://mediasmart.io/
-
-User-agent: *
