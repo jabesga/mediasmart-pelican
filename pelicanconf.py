@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Jon Ander Besga'
 SITENAME = 'Mediasmart'
-SITEURL = 'http://192.168.1.68:8000'
-
+SITEURL = ''
+SITEDESCRIPTION = 'be smart about your media buying on mobile'
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-md-metayaml']
 
-# THEME = 'theme/mediasmart'
+THEME = 'theme/mediasmart'
 
 # ARTICLE_PATHS = ['posts']
 # PAGE_PATHS = ['pages']
@@ -49,3 +49,4 @@ ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
+STATIC_PATHS = ['assets']
