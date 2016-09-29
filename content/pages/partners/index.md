@@ -9,6 +9,6 @@ permalink   : /partners/
 
 <ul data-role='partners'>
 {% for i in (1..42) %}
-  <img src='/assets/images/partners/{{ i }}.jpg' />
+  <img src='assets/images/partners/{{ i }}.jpg' />
 {% endfor %}
 </ul>

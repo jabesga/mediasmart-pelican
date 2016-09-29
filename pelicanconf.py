@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-md-metayaml']
 
-THEME = 'theme/mediasmart'
+# THEME = 'theme/mediasmart'
 
 # ARTICLE_PATHS = ['posts']
 # PAGE_PATHS = ['pages']
