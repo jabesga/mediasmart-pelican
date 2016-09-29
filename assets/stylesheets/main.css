@@ -28,7 +28,7 @@ body {
     background-position: center; }
     body > article .bck.dots {
       position: relative;
-      background: #fafafa url("/assets/images/bck-default.jpg");
+      background: #fafafa url("assets/images/bck-default.jpg");
       background-size: cover;
       color: #fff; }
       body > article .bck.dots > *:not(video) {
@@ -41,16 +41,16 @@ body {
         top: 0;
         width: 100%;
         height: 100%;
-        background: url("/assets/images/bck-dots.png") repeat top left;
+        background: url("assets/images/bck-dots.png") repeat top left;
         opacity: 0.5; }
     body > article .bck.video, body > article .bck.desk, body > article .bck.studio, body > article .bck.map {
       background-position: center center; }
     body > article .bck.desk {
-      background-image: url("/assets/images/bck-desk.jpg"); }
+      background-image: url("assets/images/bck-desk.jpg"); }
     body > article .bck.studio {
-      background-image: url("/assets/images/bck-studio.jpg"); }
+      background-image: url("assets/images/bck-studio.jpg"); }
     body > article .bck.map {
-      background: transparent url("/assets/images/bck-map.svg") center center repeat-x; }
+      background: transparent url("assets/images/bck-map.svg") center center repeat-x; }
     body > article .bck.primary {
       background-color: #FF324B;
       color: #fff; }
@@ -470,7 +470,7 @@ form {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   height: 5.86667rem; }
   [data-page].scroll > header > a > img {
-    content: url("/assets/images/logo-white.png"); }
+    content: url("assets/images/logo-white.png"); }
   [data-page].scroll > header > nav > .button {
     background-color: #fff;
     color: #FF324B; }
