@@ -28,7 +28,7 @@ body {
     background-position: center; }
     body > article .bck.dots {
       position: relative;
-      background: #fafafa url("assets/images/bck-default.jpg");
+      background: #fafafa url("/assets/images/bck-default.jpg");
       background-size: cover;
       color: #fff; }
       body > article .bck.dots > *:not(video) {
@@ -41,7 +41,7 @@ body {
         top: 0;
         width: 100%;
         height: 100%;
-        background: url("assets/images/bck-dots.png") repeat top left;
+        background: url("/assets/images/bck-dots.png") repeat top left;
         opacity: 0.5; }
     body > article .bck.video, body > article .bck.desk, body > article .bck.studio, body > article .bck.map {
       background-position: center center; }
