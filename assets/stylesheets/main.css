@@ -46,11 +46,11 @@ body {
     body > article .bck.video, body > article .bck.desk, body > article .bck.studio, body > article .bck.map {
       background-position: center center; }
     body > article .bck.desk {
-      background-image: url("assets/images/bck-desk.jpg"); }
+      background-image: url("/assets/images/bck-desk.jpg"); }
     body > article .bck.studio {
-      background-image: url("assets/images/bck-studio.jpg"); }
+      background-image: url("/assets/images/bck-studio.jpg"); }
     body > article .bck.map {
-      background: transparent url("assets/images/bck-map.svg") center center repeat-x; }
+      background: transparent url("/assets/images/bck-map.svg") center center repeat-x; }
     body > article .bck.primary {
       background-color: #FF324B;
       color: #fff; }
