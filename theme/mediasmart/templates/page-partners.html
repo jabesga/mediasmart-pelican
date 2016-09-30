@@ -1,6 +1,10 @@
+{% extends 'page-content.html' %}
+{% block product_content %}
+
 <ul data-role='partners'>
   {% for i in range(1,42) %}
     <img src='{{ SITEURL }}/assets/images/partners/{{ i }}.jpg' />
   {% endfor %}
 </ul>
 
+{% endblock %}

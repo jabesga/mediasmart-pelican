@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-{% include 'head.html' %}
+{% extends 'base.html' %}
 
-<body data-page="home">
-  {% include 'page-header.html' %}
-
+{% block content %}
   <article>
     {% include 'page-home.html' %}
   </article>
-
-  {% include 'page-footer.html' %}
-</body>
-</html>
+{% endblock %}

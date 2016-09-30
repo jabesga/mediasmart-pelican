@@ -1,8 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<article>
 <section
   data-role='title'
   class='bck dots'
   {% if page.cover %}
-  style='background-image: url("assets/images/{{ page.cover }}");'
+  style='background-image: url("{{ SITEURL }}/assets/images/{{ page.cover }}");'
   {% endif %}
 >
   <div class='wrapper'>
@@ -27,11 +30,7 @@
   <div class='wrapper {% if page.date or page.title == "Blog" %} post {% endif %}'>
     {{ page.content }}
 
-		{% if output_file == 'product/index.html' %}
-			{% include 'page-product.html' %}
-		{% elif output_file == 'partners/index.html' %}
-			{% include 'page-partners.html' %}
-		{% endif %}
+    {% block product_content %}{% endblock %}
 
   </div>
 </section>
@@ -51,3 +50,7 @@
     </a>
   {% endif %}
 </nav>
+</article>
+
+{% include 'banner-default.html' %}
+{% endblock %}
