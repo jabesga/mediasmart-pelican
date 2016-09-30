@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
@@ -22,7 +23,7 @@
 </head>
 <body data-page="content">
 <header>
-  <a href='https://jabesga.github.io/mediasmart-pelican'>
+  <a href='https://jabesga.github.io/mediasmart-pelican/'>
     <img src='https://jabesga.github.io/mediasmart-pelican/assets/images/logo.png' />
   </a>
   <nav>
@@ -50,7 +51,7 @@
     <a href='https://console.mediasmart.io' class='button primary'>SIGN IN</a>
   </nav>
 </header>
-  <article>
+<article>
 <section
   data-role='title'
   class='bck dots'
@@ -67,43 +68,197 @@
 
 <section data-role='text' data-content='About Us'>
   <div class='wrapper '>
-    <p>Back in January 2012 the world of mobile advertising was still dominated by traditional ad networks selling impressions and clicks and optimizing campaigns to maximize CTRs. The first mobile ad exchanges were getting started, enabling mobile optimized inventory to be bought programmatically using real time bidding. That is when mediasmart was founded, embracing real time bidding as the most effective media buying paradigm. The company has since then evolved to support private deals as well, additional formats beyond display and integrations with multiple third parties in the ecosystem, but always staying true to its mission: allowing advertisers to effectively reach mobile audiences in real time, while maximizing engagement with campaigns.</p>
+    
+
+
+
+<p>Back in January 2012 the world of mobile advertising was still dominated by traditional ad networks selling impressions and clicks and optimizing campaigns to maximize CTRs. The first mobile ad exchanges were getting started, enabling mobile optimized inventory to be bought programmatically using real time bidding. That is when mediasmart was founded, embracing real time bidding as the most effective media buying paradigm. The company has since then evolved to support private deals as well, additional formats beyond display and integrations with multiple third parties in the ecosystem, but always staying true to its mission: allowing advertisers to effectively reach mobile audiences in real time, while maximizing engagement with campaigns.</p>
+
 <p>Since its inception, mediasmart has always been very clear on its position in the mobile advertising ecosystem: full focus on advertisers and the buying process.</p>
+
 <h3>Team</h3>
+
 <p>We work hard and never forget to have fun in the process. Absolutely devoted to our customers and to building the best DSP out there, our passion shines through everything we do.</p>
+
 <ul data-role='team'>
-{% for member in site.data.team %}
   <li>
-    <figure style="background-image: url('assets/images/team/{{ member.image }}.jpg');">
-      <img src="assets/images/team/{{ member.image }}.funny.jpg" />
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/noelia.amoedo.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/noelia.amoedo.funny.jpg" />
     </figure>
-    <strong>{{ member.name }}</strong>
-    <small>{{ member.title }}</small>
+    <strong>Noelia Amoedo</strong>
+    <small>CEO</small>
     <nav data-role='networks'>
-      {% if member.linkedin %}<a href='https://www.linkedin.com/in/{{ member.linkedin }}' class='icon linkedin' target='blank'></a>{% endif %}
-      {% if member.twitter %}<a href='https://twitter.com/{{ member.twitter }}' class='icon twitter' target='blank'></a>{% endif %}
-      {% if member.github %}<a href='https://github.com/{{ member.github }}' class='icon github' target='blank'></a>{% endif %}
-    </nav>
+<a href='https://www.linkedin.com/in/namoedo' class='icon linkedin' target='blank'></a><a href='https://twitter.com/namoedo' class='icon twitter' target='blank'></a>    </nav>
   </li>
-{% endfor %}
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/guillermo.fernandez.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/guillermo.fernandez.funny.jpg" />
+    </figure>
+    <strong>Guillermo Fernandez</strong>
+    <small>CTO</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/gfernandez' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/nuria.alonso.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/nuria.alonso.funny.jpg" />
+    </figure>
+    <strong>Nuria Alonso</strong>
+    <small>Commercial Director</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/nuriaalonso' class='icon linkedin' target='blank'></a><a href='https://twitter.com/Nurialonso' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/julio.aguayo.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/julio.aguayo.funny.jpg" />
+    </figure>
+    <strong>Julio Aguayo</strong>
+    <small>International Business Dev.</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/julioaguayogoded' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/mo.hussain.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/mo.hussain.funny.jpg" />
+    </figure>
+    <strong>Mo Hussain</strong>
+    <small>Commercial Director UK</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/mohammedshussain' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/lucas.oriol.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/lucas.oriol.funny.jpg" />
+    </figure>
+    <strong>Lucas Oriol</strong>
+    <small>CFO</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/lucas-oriol-hoyos-0379a0b' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/marta.lopez.de.haro.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/marta.lopez.de.haro.funny.jpg" />
+    </figure>
+    <strong>Marta Lopez de Haro</strong>
+    <small>Client Service Director</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/martalopezdeharo' class='icon linkedin' target='blank'></a><a href='https://twitter.com/martalh' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/javi.jimenez.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/javi.jimenez.funny.jpg" />
+    </figure>
+    <strong>Javi Jimenez</strong>
+    <small>UX/UI Team Leader</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/soyjavi' class='icon linkedin' target='blank'></a><a href='https://twitter.com/soyjavi' class='icon twitter' target='blank'></a><a href='https://github.com/soyjavi' class='icon github' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/alejandro.fernandez.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/alejandro.fernandez.funny.jpg" />
+    </figure>
+    <strong>Alejandro Fernandez</strong>
+    <small>Chief Data Scientist</small>
+    <nav data-role='networks'>
+<a href='https://twitter.com/pinchito' class='icon twitter' target='blank'></a><a href='https://github.com/alexfernandez' class='icon github' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/sergio.garcia.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/sergio.garcia.funny.jpg" />
+    </figure>
+    <strong>Sergio Garcia</strong>
+    <small>Senior Developer</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/sergio-garcia-mondaray-91544a26' class='icon linkedin' target='blank'></a><a href='https://twitter.com/sgmonda' class='icon twitter' target='blank'></a><a href='https://github.com/sgmonda' class='icon github' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/yarilo.villanueva.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/yarilo.villanueva.funny.jpg" />
+    </figure>
+    <strong>Yarilo Villanueva</strong>
+    <small>Developer</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/yarilovillanueva' class='icon linkedin' target='blank'></a><a href='https://twitter.com/yarilococodrilo' class='icon twitter' target='blank'></a><a href='https://github.com/yarilo' class='icon github' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/alfredo.lopez.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/alfredo.lopez.funny.jpg" />
+    </figure>
+    <strong>Alfredo Lopez</strong>
+    <small>Backend Developer</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/alfredo-lópez-moltó-b1814647' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/rafael.tejado.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/rafael.tejado.funny.jpg" />
+    </figure>
+    <strong>Rafael Tejado</strong>
+    <small>Customer Success Engineer</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/rafaeltejado' class='icon linkedin' target='blank'></a><a href='https://twitter.com/teddyviking' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/gonzalo.moreno.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/gonzalo.moreno.funny.jpg" />
+    </figure>
+    <strong>Gonzalo Moreno</strong>
+    <small>Customer Success Engineer</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/gonzamvita' class='icon linkedin' target='blank'></a><a href='https://twitter.com/gonzamvita' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/tiago.vila.verde.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/tiago.vila.verde.funny.jpg" />
+    </figure>
+    <strong>Tiago Vila Verde</strong>
+    <small>Campaign Perfomance Manager</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/tiagovilaverde' class='icon linkedin' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/javier.almirante.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/javier.almirante.funny.jpg" />
+    </figure>
+    <strong>Javier Almirante</strong>
+    <small>Account Manager</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/javier-almirante-75a55015' class='icon linkedin' target='blank'></a><a href='https://twitter.com/jalmirante69' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/adriana.ullivari.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/adriana.ullivari.funny.jpg" />
+    </figure>
+    <strong>Adriana Ullivari</strong>
+    <small>Account Manager</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/adrianaperezullivarri' class='icon linkedin' target='blank'></a><a href='https://twitter.com/AdriUllivarri' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/gema.posada.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/gema.posada.funny.jpg" />
+    </figure>
+    <strong>Gema Posada</strong>
+    <small>Account Manager</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/gemaposadagomez' class='icon linkedin' target='blank'></a><a href='https://twitter.com/gemaposada' class='icon twitter' target='blank'></a>    </nav>
+  </li>
+  <li>
+    <figure style="background-image: url('https://jabesga.github.io/mediasmart-pelican/assets/images/team/manuel.martinez.jpg');">
+      <img src="https://jabesga.github.io/mediasmart-pelican/assets/images/team/manuel.martinez.funny.jpg" />
+    </figure>
+    <strong>Manuel Martinez</strong>
+    <small>Account Manager</small>
+    <nav data-role='networks'>
+<a href='https://www.linkedin.com/in/manuelmartinezrodriguez' class='icon linkedin' target='blank'></a><a href='https://twitter.com/martinezmanu_' class='icon twitter' target='blank'></a>    </nav>
+  </li>
 </ul>
 
+
 <h3>Careers</h3>
+
 <p>We launched in 2012 and are based in Madrid and London, but depending on the position you may work wherever you want. We are growing at three figure rates every year! Be part of our journey. We’d love to hear from you! Email us with some thoughts on what you’re passionate about.</p>
-<form multipart>
-  <h2>Work with us</h2>
-  {% for input in site.data.forms.hiring %}
-    <label>{{ input.label }}</label>
-    {% if (input.type != 'textarea') %}
-      <input name='{{ input.name }}' type='{{ input.type }}' required />
-    {% else %}
-      <textarea name='{{ input.name }}' required></textarea>
-    {% endif %}
-  {% endfor %}
-  <button class='primary large'>
-    <label>Apply now</label>
-  </button>
-</form>
+
 
 
   </div>
@@ -111,8 +266,9 @@
 
 <nav data-role='links'>
 
-</nav>  </article>
-  
+</nav>
+</article>
+
 <article data-role='banner'>
   <section class='bck dots desk'>
     <h2>Trusted by hundreds of businesses worldwide</h2>
