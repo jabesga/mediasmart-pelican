@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mediasmart</title>
+  <meta name="description" content="be smart about your media buying on mobile">
+  <link rel="canonical" href="https://jabesga.github.io/mediasmart-pelican">
+  <link rel="alternate" type="application/rss+xml" title="Mediasmart" href="/feed.xml" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Montserrat:700|Merriweather:300' rel='stylesheet' type='text/css'>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@mediasmart_mb" />
+  <meta name="twitter:title" content="Mediasmart" />
+  <meta name="twitter:description" content="be smart about your media buying on mobile" />
+  <meta name="twitter:image" content="https://jabesga.github.io/mediasmart-pelican/assets/images/avatar.png" />
+  <link rel="shortcut icon" href="https://jabesga.github.io/mediasmart-pelican/assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://jabesga.github.io/mediasmart-pelican/assets/stylesheets/main.css">
+  <script src="https://jabesga.github.io/mediasmart-pelican/assets/javascripts/page.js"></script>	
+</head>
+<body data-page="content">
+<header>
+  <a href='/'>
+    <img src='https://jabesga.github.io/mediasmart-pelican/assets/images/logo.png' />
+  </a>
+  <nav>
+    <a href='/product'>
+      PRODUCT
+      <ul>
+        <li href='https://jabesga.github.io/mediasmart-pelican/product#wide-range-of-advertising-formats'>
+          <strong>Wide Range of Advertising formats</strong>
+          <span>Display, Video and Native; multiple options to communicate your message.</span>
+        </li>
+        <li href='https://jabesga.github.io/mediasmart-pelican/product#advanced-targeting-options'>
+          <strong>Advanced Targeting Options</strong>
+          <span>Use a lot of mobile specific variables for targeting, without sacrificing reach.</span>
+        </li>
+        <li href='https://jabesga.github.io/mediasmart-pelican/product#smart-campaign-management'>
+          <strong>Smart Campaign Control</strong>
+          <span>Predictive targeting algorithm, wizard, alerts, in-depth visual reports, online help & support.</span>
+        </li>
+      </ul>
+    </a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/partners'>PARTNERS</a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/about-us'>ABOUT US</a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/contact'>CONTACT</a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/blog'>BLOG</a>
+    <a href='https://console.mediasmart.io' class='button primary'>SIGN IN</a>
+  </nav>
+</header>
+  <article>
+<section
+  data-role='title'
+  class='bck dots'
+>
+  <div class='wrapper'>
+    <h1>About Us</h1>
+			<h3>A team of professionals with many years of experience in the mobile and digital advertising world striving for innovation and quality of service.</h3>
+  </div>
+
+<video autoplay loop preload>
+  <source src="https://jabesga.github.io/mediasmart-pelican/assets/videos/mockup.mp4" type="video/mp4" />
+  <source src="https://jabesga.github.io/mediasmart-pelican/assets/videos/mockup.webm" type="video/webm" />
+</video></section>
+
+<section data-role='text' data-content='About Us'>
+  <div class='wrapper '>
+    <p>Back in January 2012 the world of mobile advertising was still dominated by traditional ad networks selling impressions and clicks and optimizing campaigns to maximize CTRs. The first mobile ad exchanges were getting started, enabling mobile optimized inventory to be bought programmatically using real time bidding. That is when mediasmart was founded, embracing real time bidding as the most effective media buying paradigm. The company has since then evolved to support private deals as well, additional formats beyond display and integrations with multiple third parties in the ecosystem, but always staying true to its mission: allowing advertisers to effectively reach mobile audiences in real time, while maximizing engagement with campaigns.</p>
+<p>Since its inception, mediasmart has always been very clear on its position in the mobile advertising ecosystem: full focus on advertisers and the buying process.</p>
+<h3>Team</h3>
+<p>We work hard and never forget to have fun in the process. Absolutely devoted to our customers and to building the best DSP out there, our passion shines through everything we do.</p>
+<ul data-role='team'>
+{% for member in site.data.team %}
+  <li>
+    <figure style="background-image: url('assets/images/team/{{ member.image }}.jpg');">
+      <img src="assets/images/team/{{ member.image }}.funny.jpg" />
+    </figure>
+    <strong>{{ member.name }}</strong>
+    <small>{{ member.title }}</small>
+    <nav data-role='networks'>
+      {% if member.linkedin %}<a href='https://www.linkedin.com/in/{{ member.linkedin }}' class='icon linkedin' target='blank'></a>{% endif %}
+      {% if member.twitter %}<a href='https://twitter.com/{{ member.twitter }}' class='icon twitter' target='blank'></a>{% endif %}
+      {% if member.github %}<a href='https://github.com/{{ member.github }}' class='icon github' target='blank'></a>{% endif %}
+    </nav>
+  </li>
+{% endfor %}
+</ul>
+
+<h3>Careers</h3>
+<p>We launched in 2012 and are based in Madrid and London, but depending on the position you may work wherever you want. We are growing at three figure rates every year! Be part of our journey. We’d love to hear from you! Email us with some thoughts on what you’re passionate about.</p>
+<form multipart>
+  <h2>Work with us</h2>
+  {% for input in site.data.forms.hiring %}
+    <label>{{ input.label }}</label>
+    {% if (input.type != 'textarea') %}
+      <input name='{{ input.name }}' type='{{ input.type }}' required />
+    {% else %}
+      <textarea name='{{ input.name }}' required></textarea>
+    {% endif %}
+  {% endfor %}
+  <button class='primary large'>
+    <label>Apply now</label>
+  </button>
+</form>
+
+
+  </div>
+</section>
+
+<nav data-role='links'>
+
+</nav>  </article>
+  
+<article data-role='banner'>
+  <section class='bck dots desk'>
+    <h2>Trusted by hundreds of businesses worldwide</h2>
+    <a href='https://jabesga.github.io/mediasmart-pelican/contact' class='button primary large'>
+      <label>CONTACT US</label>
+    </a>
+    <!-- <small>Free forever when you sign up for a free account.</small> -->
+  </section>
+</article>
+<article data-role='sitemap'>
+  <div class='wrapper'>
+    <nav>
+      <h3>Get in touch</h3>
+      <span>+34 91 591 53 79</span>
+      <span>+44 7834 284 611</span>
+      <a href='mailto:info@mediasmart.io'>info@mediasmart.io</a>
+    </nav>
+    <nav>
+      <h3>Product</h3>
+      <a href='https://jabesga.github.io/mediasmart-pelican/product#wide-range-of-advertising-formats'>Wide Range of Advertising Formats</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/product#advanced-targeting-options'>Advanced Targeting Options</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/product#smart-campaign-management'>Smart Campaign Management</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/partners'>Partners</a>
+    </nav>
+    <nav>
+      <h3>About us</h3>
+      <a href='https://jabesga.github.io/mediasmart-pelican/about-us#team'>The Team</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/about-us#careers'>Jobs <span class='tag primary'><label>we're hiring</label></span></a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/contact'>Contact</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/blog'>Blog</a>
+      <a href='https://jabesga.github.io/mediasmart-pelican/assets/downloads/mediasmart-press-pack.zip'>Press pack</a>
+    </nav>
+    <nav>
+      <h3>Latest on the blog</h3>
+ 
+        	<a href='https://jabesga.github.io/mediasmart-pelican/blog/mediasmart-launches-new-programmatic-console'>
+          	mediasmart launches new programmatic console for mobile media buying and campaign management
+	        </a>
+ 
+        	<a href='https://jabesga.github.io/mediasmart-pelican/blog/a-programmatic-vision-for-private-exchanges'>
+          	A Programmatic Vision for Private Exchanges
+	        </a>
+ 
+        	<a href='https://jabesga.github.io/mediasmart-pelican/blog/monetisation-and-the-data-game'>
+          	Monetisation and the data game
+	        </a>
+ 
+        	<a href='https://jabesga.github.io/mediasmart-pelican/blog/the-elusive-art-of-gaming-monetisation'>
+          	The Elusive Art of Gaming Monetisation
+	        </a>
+ 
+        	<a href='https://jabesga.github.io/mediasmart-pelican/blog/mediasmart-and-ligatus-partner'>
+          	Mediasmart and Ligatus partner
+	        </a>
+    </nav>
+  </div>
+</article>
+
+<footer>
+  <span>©2016 Mediasmart</span>
+  <nav>
+    <a href='https://jabesga.github.io/mediasmart-pelican/terms-of-use'>Terms of use</a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/privacy-policy'>Privacy policy</a>
+    <a href='https://jabesga.github.io/mediasmart-pelican/cookie-policy'>Cookie policy</a>
+  </nav>
+  <nav data-role='networks'>
+    <a href='https://twitter.com/mediasmart_mb' target='_blank' class='icon twitter'></a>
+    <a href='https://www.facebook.com/pages/Mediasmart-Mobile/504657222949687' target='_blank' class='icon facebook'></a>
+    <a href='https://www.youtube.com/channel/UCMkb1sSXEaxpzJ4fqmJMHQg' target='_blank' class='icon youtube'></a>
+    <a href='https://angel.co/mediasmart-mobile' target='_blank' class='icon angellist'></a>
+  </nav>
+</footer></body>
+</html>
