@@ -1,25 +1,38 @@
 <section
   data-role='title'
-  class='bck dots {{ page.background }}'
+  class='bck dots'
   {% if page.cover %}
   style='background-image: url("assets/images/{{ page.cover }}");'
   {% endif %}
 >
-  <div class='wrapper {% if page.date or page.title == "Blog" %} post {% endif %}'>
+  <div class='wrapper'>
     <h1>{{ page.title }}</h1>
-    {% if page.date %}<h3>{{ page.date | date: '%B %d, %Y' }}</h3>{% endif %}
-    {% if page.tag %}<span class='tag'>{{ page.tag }}</span>{% endif %}
-    {% if page.subtitle %}<h3>{{ page.subtitle }}</h3>{% endif %}
+		{% if page.date %}
+			<h3>{{ page.date.strftime('%B-%d-%Y') }}</h3>
+		{% endif %}
+    {% if page.tag %}
+			<span class='tag'>{{ page.tag }}</span>
+		{% endif %}
+    {% if page.subtitle %}
+			<h3>{{ page.subtitle }}</h3>
+		{% endif %}
   </div>
 
   {% if (page.background == nil and page.cover == nil) %}
-    {% include video.html %}
+    {% include 'video.html' %}
   {% endif %}
 </section>
 
 <section data-role='text' data-content='{{ page.title }}'>
   <div class='wrapper {% if page.date or page.title == "Blog" %} post {% endif %}'>
-    {{content}}
+    {{ page.content }}
+
+		{% if output_file == 'product/index.html' %}
+			{% include 'page-product.html' %}
+		{% elif output_file == 'partners/index.html' %}
+			{% include 'page-partners.html' %}
+		{% endif %}
+
   </div>
 </section>
 

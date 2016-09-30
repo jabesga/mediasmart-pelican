@@ -8,25 +8,27 @@
     </nav>
     <nav>
       <h3>Product</h3>
-      <a href='/product#wide-range-of-advertising-formats'>Wide Range of Advertising Formats</a>
-      <a href='/product#advanced-targeting-options'>Advanced Targeting Options</a>
-      <a href='/product#smart-campaign-management'>Smart Campaign Management</a>
-      <a href='/partners'>Partners</a>
+      <a href='{{ SITEURL }}/product#wide-range-of-advertising-formats'>Wide Range of Advertising Formats</a>
+      <a href='{{ SITEURL }}/product#advanced-targeting-options'>Advanced Targeting Options</a>
+      <a href='{{ SITEURL }}/product#smart-campaign-management'>Smart Campaign Management</a>
+      <a href='{{ SITEURL }}/partners'>Partners</a>
     </nav>
     <nav>
       <h3>About us</h3>
-      <a href='/about-us#team'>The Team</a>
-      <a href='/about-us#careers'>Jobs <span class='tag primary'><label>we're hiring</label></span></a>
-      <a href='/contact'>Contact</a>
-      <a href='/blog'>Blog</a>
-      <a href='assets/downloads/mediasmart-press-pack.zip'>Press pack</a>
+      <a href='{{ SITEURL }}/about-us#team'>The Team</a>
+      <a href='{{ SITEURL }}/about-us#careers'>Jobs <span class='tag primary'><label>we're hiring</label></span></a>
+      <a href='{{ SITEURL }}/contact'>Contact</a>
+      <a href='{{ SITEURL }}/blog'>Blog</a>
+      <a href='{{ SITEURL }}/assets/downloads/mediasmart-press-pack.zip'>Press pack</a>
     </nav>
     <nav>
       <h3>Latest on the blog</h3>
-      {% for post in site.posts limit:5 %}
-        <a href='{{ post.url | prepend: site.baseurl }}'>
-          {{ post.title }}
-        </a>
+      {% for article in articles %}
+				{% if loop.index <= 5 %} 
+        	<a href='{{ SITEURL}}/{{ article.url }}'>
+          	{{ article.title }}
+	        </a>
+				{% endif %}
       {% endfor %}
     </nav>
   </div>
@@ -35,9 +37,9 @@
 <footer>
   <span>©2016 Mediasmart</span>
   <nav>
-    <a href='/terms-of-use'>Terms of use</a>
-    <a href='/privacy-policy'>Privacy policy</a>
-    <a href='/cookie-policy'>Cookie policy</a>
+    <a href='{{ SITEURL }}/terms-of-use'>Terms of use</a>
+    <a href='{{ SITEURL }}/privacy-policy'>Privacy policy</a>
+    <a href='{{ SITEURL }}/cookie-policy'>Cookie policy</a>
   </nav>
   <nav data-role='networks'>
     <a href='https://twitter.com/mediasmart_mb' target='_blank' class='icon twitter'></a>

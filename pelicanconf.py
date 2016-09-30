@@ -19,6 +19,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+FEED_DOMAIN = SITEURL
+FEED_ALL_RSS = 'feed.xml'
+
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -36,10 +39,11 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-md-metayaml']
 
-# THEME = 'theme/mediasmart'
+THEME = 'theme/mediasmart'
+THEME_STATIC_DIR = 'assets'
 
-# ARTICLE_PATHS = ['posts']
-# PAGE_PATHS = ['pages']
+ARTICLE_PATHS = ['posts']
+PAGE_PATHS = ['pages']
 
 USE_FOLDER_AS_CATEGORY = False
 
@@ -50,3 +54,5 @@ PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
 STATIC_PATHS = ['assets']
+
+TYPOGRIFY = False 
